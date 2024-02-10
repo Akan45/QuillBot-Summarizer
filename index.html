@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .custom-width {
+        width: 3.5rem;
+      }
+      .custom-width1 {
+        width: 2rem;
+        height: 2rem;
+      }
+      .custom-width4 {
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        
+        width: 90vw;
+        height: 3rem;
+       
+      }
+      .custom-width5 {
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        
+        width: 90vw;
+        height: 90%;
+       
+      }
+      .custom-width6 {
+       margin: 0;
+      height: 79%;
+       
+      }
+      .custom-bordered-radius {
+        border-radius: 12rem;
+      }
+      .custom-bordered-radius-box {
+        border-radius: 2rem;
+      }
+      .c-width{
+        width: 7%;
+       
+      }
+      .custom-background{
+        background-color: #fef8e8 ;
+        
+      }
+      
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="first">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list navbar-toggler-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <button type="button" class="btn rounded-circle btn-success">
+            <svg
+              class="svg-fluid"
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="19"
+              fill="currentColor"
+              class="bi bi-robot"
+              viewBox="0 1 16 16"
+            >
+              <path
+                d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"
+              />
+              <path
+                d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"
+              />
+            </svg>
+          </button>
+          <button type="button" class="btn text-success ">
+            <b>QuillBot</b>
+          </button>
+        </div>
+
+        <div class="second">
+          <p class="h5 my-2 mx-4">Summarizer</p>
+        </div>
+
+        <div class="third">
+          <button
+            type="button"
+            class="btn btn-success custom-bordered-radius mx-1 "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-gem"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"
+              />
+            </svg>
+            <b>Upgrade to Premium</b>
+          </button>
+          <button type="button" class="btn  rounded-circle mx-1 custom-width ">
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/flags-of-countries-3/128/USA-1024.png"
+              class="img-fluid"
+              alt="Responsive Image"
+            />
+          </button>
+          <button type="button" class="btn rounded-circle btn-light mx-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-moon-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+              />
+            </svg>
+          </button>
+          <button type="button" class="btn rounded-circle btn-light mx-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar left -->
+
+
+      
+
+<section class="home d-flex flex-row">
+  <ul class="nav flex-column bg-white">
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-success  rounded-circle mx-1 custom-width1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-paragraph"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M10.5 15a.5.5 0 0 1-.5-.5V2H9v12.5a.5.5 0 0 1-1 0V9H7a4 4 0 1 1 0-8h5.5a.5.5 0 0 1 0 1H11v12.5a.5.5 0 0 1-.5.5"
+          />
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-danger my-1 rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spellcheck" viewBox="0 0 16 16">
+          <path d="M8.217 11.068c1.216 0 1.948-.869 1.948-2.31v-.702c0-1.44-.727-2.305-1.929-2.305-.742 0-1.328.347-1.499.889h-.063V3.983h-1.29V11h1.27v-.791h.064c.21.532.776.86 1.499.86zm-.43-1.025c-.66 0-1.113-.518-1.113-1.28V8.12c0-.825.42-1.343 1.098-1.343.684 0 1.075.518 1.075 1.416v.45c0 .888-.386 1.401-1.06 1.401zm-5.583 1.035c.767 0 1.201-.356 1.406-.737h.059V11h1.216V7.519c0-1.314-.947-1.783-2.11-1.783C1.355 5.736.75 6.42.69 7.27h1.216c.064-.323.313-.552.84-.552s.864.249.864.771v.464H2.346C1.145 7.953.5 8.568.5 9.496c0 .977.693 1.582 1.704 1.582m.42-.947c-.44 0-.845-.235-.845-.718 0-.395.269-.684.84-.684h.991v.538c0 .503-.444.864-.986.864m8.897.567c-.577-.4-.9-1.088-.9-1.983v-.65c0-1.42.894-2.338 2.305-2.338 1.352 0 2.119.82 2.139 1.806h-1.187c-.04-.351-.283-.776-.918-.776-.674 0-1.045.517-1.045 1.328v.625c0 .468.121.834.343 1.067z"/>
+          <path d="M14.469 9.414a.75.75 0 0 1 .117 1.055l-4 5a.75.75 0 0 1-1.116.061l-2.5-2.5a.75.75 0 1 1 1.06-1.06l1.908 1.907 3.476-4.346a.75.75 0 0 1 1.055-.117"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-warning rounded-circle mx-1 my-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+          <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-primary rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+          <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-info rounded-circle mx-1 my-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-paragraph" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-primary rounded-circle mx-1  custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-quote" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn px-0 py-0 btn-dark rounded-circle mx-1 my-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+          <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+          <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+        </svg>
+      </button>
+    </li>
+    <hr class="c-width"/>
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+          <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"/>
+        </svg>
+      </button>
+    </li>
+
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-word" viewBox="0 0 16 16">
+          <path d="M5.485 6.879a.5.5 0 1 0-.97.242l1.5 6a.5.5 0 0 0 .967.01L8 9.402l1.018 3.73a.5.5 0 0 0 .967-.01l1.5-6a.5.5 0 0 0-.97-.242l-1.036 4.144-.997-3.655a.5.5 0 0 0-.964 0l-.997 3.655L5.485 6.88z"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+        </svg>
+      </button>
+    </li>
+
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+          <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+        </svg>
+      </button>
+    </li>
+    <hr class="c-width" />
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </svg>
+      </button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn rounded-circle mx-1 custom-width1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+      </button>
+    </li>
+  </ul>
+
+  <div class="right ">
+      <div class="alert bg-success text-light custom-width4  d-flex flex-row justify-content-between " role="alert">
+        QuillBot for Edge  |
+        
+         Write like a pro, everywhere you write.
+      <button type="button" class="btn-close btn-light" aria-label="Close"></button>
+  </div>
+
+  <!-- box starts -->
+<section class="right1 custom-width6 d-flex flex-row justify-content-between ">
+  <div class="border rounded bg-white  custom-width5">
+    <nav class="bg-light  rounded">
+   
+      <div class="nav nav-tabs rounded bg-white border-top-2" id="nav-tab" role="tablist">
+        <p class="mx-3 my-2">Modes:</p>
+        <button class="nav-link active text-success " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Paragraph</button>
+        <button class="nav-link text-success" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Bullet Points</button>
+        <p class=" my-2">Summary Length:</p>
+        <div class="d-flex flex-row">
+          <p class="mx-2 my-2">Short</p>
+          <label for="customRange2" class="form-label "></label>
+    <input type="range" class="form-range my-2" min="0" max="5" id="customRange2">
+          <p class="mx-2 my-2">Long</p>
+        </div>
+       
+        </div>
+      
+    </nav>
+    <div class="tab-content  custom-width6" id="nav-tabContent">
+      <div class="tab-pane fade  show active custom-width6" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
+       
+        <textarea class="form-control w-50 h-100 " id="exampleFormControlTextarea1" rows="3" placeholder="Enter or paste your text and press Summarize."></textarea>
+        
+      </div>
+      <div class="tab-pane fade custom-width6" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        
+    <textarea class="form-control w-50 h-100 " id="exampleFormControlTextarea1" rows="3" placeholder="Enter or paste your text and press Summarize."></textarea>
+      </div>
+    
+      <div class="last d-flex flex-row ">
+        <div class="d-flex flex-row justify-content-between w-50">
+          <button type="button" class="btn rounded-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z"/>
+                <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+              </svg>
+              <p>Upload Doc</p>
+          </button>
+          <button
+          type="button"
+          class="btn btsuccess custom-bordered-radius  ">
+          Summarize
+         </button>
+      </div>
+      <div >
+        <b>0 sentences . 0 words</b>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+  </section>
+  </div>
+  
+  
+
+  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+      <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+      <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Feedback</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <hr class="w-100">
+    <div class="offcanvas-body">
+      <div>
+       <b>We're listening</b>
+       <p>Questions?Comments?We want to hear.</p>
+       <input type="text" name="feedback" id="feedback" class="w-100 h-50">
+      
+      </div>
+      <input class="btn btn-success my-4" type="submit" value="Submit">
+    </div>
+  </div>
+</section>
+
+
+  <section class="bg-white">
+    <div class="container text-center ">
+      <div class="row">
+        <div class="col">
+          <div class="mt-5 mb-5 ">
+            <h3 class="">Summarize any text with a click of a button</h3>
+            <p class="text-center ">QuillBot's Summarizer can condense articles, papers, or documents down to the key points instantly. Our AI uses natural language processing to locate critical information while maintaining the original context.</p>
+            <!-- Table continues -->
+          <div class="container  ">
+            <div class="row">
+              <div class="col">
+                <table class="table table-bordered w-50 m-auto">
+                  <tbody>
+                    <tr>
+                      <td scope="row"> AI-powered</td>
+                      <td>  Quickly extracts key points</td>
+                     </tr>
+                    <tr>
+                      <td scope="row">	
+                      Summarizes</td>
+                      <td>	
+                        Essays, papers & documents</td>
+                     </tr>
+                    <tr>
+                      <td scope="row"> AI modes</td>
+                      <td> Bullet Points & Paragraph</td>
+                     </tr>
+                    <tr>
+                      <td scope="row">  100% free </td>
+                      <td>	
+                        Unlimited summarization</td>
+                    </tr>
+                   </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    
+      
+   
+   
+  </section>
+    
+  <footer id="last bg-light ">
+ <div class="phase1 d-flex custom-width5 justify-content-around">
+  <div class="right1">
+    <div class="1st d-flex flex-column my-1 ">
+      <b class="px-3 ">Writing Tools</b>
+      <a href="#" class="btn btn-link text-dark text-left"> Paraphrasing Tool</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Summarizer</a>
+      <a href="#" class="btn btn-link text-dark text-left"> QuillBot Flow</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Plagiarism Checker</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Word Counter</a>
+      <a href="#" class="btn btn-link text-dark text-left">Translator</a>
+      <a href="#" class="btn btn-link text-dark text-left"> AI Detector</a>
+      
+    </div>
+    <div class=" 1st d-flex flex-column my-5">
+      <b class="px-3">Extensions</b>
+      <a href="#" class="btn btn-link text-dark text-left"> QuillBot for chrome</a>
+      <a href="#" class="btn btn-link text-dark text-left"> QuillBot for Word</a>
+      <a href="#" class="btn btn-link text-dark text-left">QuillBot for macOS</a>
+    </div>
+  </div>
+    <div class="right2 d-flex flex-column">
+      <div class=" 3rd d-flex flex-column my-1">
+        <b class="px-3">Free Grammer Tools</b>
+        <a href="#" class="btn btn-link text-dark text-left"> Grammer Checker</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Proofreader</a>
+      <a href="#" class="btn btn-link text-dark text-left">Spell Checker</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Punctuation Checker</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Essay Checker</a>
+      
+      </div>
+      <div class=" 4rd ">
+        <div class=" 3rd d-flex flex-column my-5">
+        <b class="px-3">Student Resources</b>
+        <a href="#" class="btn btn-link text-dark text-left"> Tools & Videos</a>
+      <a href="#" class="btn btn-link text-dark text-left"> Educational Courses</a>
+        </div>
+      </div>
+     </div>
+
+     <div class="right3 d-flex flex-column">
+      <div class=" 3rd d-flex flex-column my-1">
+        <b class="px-3">Citation Tools</b>
+        <a href="#" class="btn btn-link text-dark text-left"> Citation Generator</a>
+      <a href="#" class="btn btn-link text-dark text-left"> APA Citation Generator</a>
+      <a href="#" class="btn btn-link text-dark text-left">MLA Citation Generator</a>
+     </div>
+      <div class=" 4rd ">
+        <div class=" 3rd d-flex flex-column my-5">
+          <b class="px-3">Knowledge Base</b>
+          <a href="#" class="btn btn-link text-dark text-left"> QuillBot University</a>
+          <a href="#" class="btn btn-link text-dark text-left"> Paraphrasing Guide</a>
+          <a href="#" class="btn btn-link text-dark text-left"> AI Writing Assistant</a>
+          <a href="#" class="btn btn-link text-dark text-left"> QuillBot Blog</a>
+          <a href="#" class="btn btn-link text-dark text-left"> Meaning.io</a>
+        </div>
+       </div>
+    </div>
+
+    <div class="right3 d-flex flex-column">
+      <div class=" 3rd d-flex flex-column my-1">
+        <b class="px-3">Company</b>
+        <a href="#" class="btn btn-link text-dark text-left"> Team</a>
+        <a href="#" class="btn btn-link text-dark text-left"> Careers</a>
+        <a href="#" class="btn btn-link text-dark text-left"> Help Center</a>
+        <a href="#" class="btn btn-link text-dark text-left"> Contact Us</a>
+        <a href="#" class="btn btn-link text-dark text-left">Join Us on Discord </a>
+     
+    </div>
+      <div class=" 4rd ">
+        <div class=" 3rd d-flex flex-column my-5">
+          <b class="px-3">Services</b>
+          <a href="#" class="btn btn-link text-dark text-left"> Premium</a>
+          <a href="#" class="btn btn-link text-dark text-left"> Team Plan</a>
+          <a href="#" class="btn btn-link text-dark text-left"> Affiliate</a>
+          <a href="#" class="btn btn-link text-dark text-left"> Request a Demo</a>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="custom-width5 d-flex flex-column justify-content-around m-auto">
+    <b class="px-3   mx-2">Get to Know Us</b>
+    <div class="d-flex flex-row px-2 mx-2">
+      <i class="bi bi-linkedin text-primary mx-2"></i>
+      <i class="bi bi-facebook text-primary mx-2"></i>
+      <i class="bi bi-twitter-x mx-2"></i>
+      <i class="bi bi-instagram mx-2"></i>
+     </div>
+    </div> 
+
+     <div class="my-4 custom-width5 d-flex justify-content-between m-auto">
+      <div>
+        <small class="my-2 px-3">QuillBot, a Learneo, Inc. business</small>
+
+      <div class="d-flex">
+        <a href="#" class="btn btn-link text-dark text-left "><small>Privacy Policy</small> </a>
+        <li> <a href="#" class="btn btn-link text-dark text-left"><small>Terms of Service</small> </a></li>
+        <li> <a href="#" class="btn btn-link text-dark text-left"> <small>Copyright Policy</small></a></li>
+      </div>
+      <small class="my-2 px-3">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</small>
+      </div>
+      <div>
+        <small>Made with love at <a href="#" class="btn btn-link text-dark text-left p-0 border-0"><small> UIUC</small> </a></small>
+      </div>
+      
+     
+     </div>
+  
+
+     
+    
+
+
+
+     
+     
+   
+</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
